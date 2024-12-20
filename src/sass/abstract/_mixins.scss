@@ -1,0 +1,28 @@
+@mixin respond($breakpoint){
+    @if($breakpoint == phone){
+      @media only screen and (max-width:450px){
+        @content;
+      }
+    }
+    @if($breakpoint == tab-port){
+      @media only screen and (max-width:750px){
+        @content;
+      }
+    }
+    @if($breakpoint == tab-lend){
+      @media only screen and (max-width:1000px){
+        @content;
+      }
+    }
+    @if($breakpoint == big-screen){
+      @media only screen and (max-width:1200px){
+        @content;
+      }
+    }
+  }
+  @mixin border-red(){
+    border: 1px solid $color-red;
+  }
+  @mixin red-gradient(){
+    background: linear-gradient(90deg, rgba(226,86,120,1) 0%, rgba(171,49,84,1) 100%);
+  }

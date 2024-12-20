@@ -1,0 +1,23 @@
+.btn{
+    border-radius: 60px;
+    font-size: rem(14px);
+    border: none;
+    cursor: pointer;
+    padding: rem(27px);
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.btn-red{
+    @include  red-gradient;
+    color: $color-white;
+    width: 100%;
+}
+.btn-tran{
+    background: transparent;
+    color: $color-red;
+    border: 1px solid $color-red;
+}
+.btn-tran-thin, .btn-red-thin{
+    padding: rem(10px);
+}

@@ -1,0 +1,41 @@
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    margin-bottom: rem(200px);
+    @include respond(tab-lend){
+        margin-bottom: rem(130px);
+    }
+    @include respond(tab-lend){
+        padding: 0 rem(20px);
+    }
+    @include respond(phone){
+        padding: rem(10px);
+        margin-bottom: rem(100px);
+    }
+}
+.container{
+    max-width: rem(1300px);
+    margin: 0 auto;
+    padding: 0 rem(20px);
+    @include respond(phone){
+        font-size: rem(10px);
+    }
+}
+// html{
+//     @include respond(big-screen){
+//         font-size: 110%;
+//     }
+//     @include respond(tab-lend){
+//         font-size: 90%;
+//     }
+//     @include respond(tab-port){
+//         font-size: 80%;
+//     }
+//     @include respond(phone){
+//         font-size: 70%;
+//     }
+// }

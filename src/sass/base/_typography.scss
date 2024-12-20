@@ -1,0 +1,55 @@
+body{
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-black;
+}
+.title-1{
+    font-size: rem(40px);
+    font-weight: 400;
+    @include respond(tab-port){
+        font-size: rem(30px);
+    }
+}
+.title-2{
+    font-weight: 400;
+    font-size: rem(50px);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: rem(8px);
+    @include respond(tab-port){
+        font-size: rem(40px);
+    }
+    @include respond(phone){
+        font-size: rem(20px);
+    }
+}
+.title-3{
+    font-weight: 300;
+    font-size: rem(30px);
+    text-align: center;
+    text-transform: uppercase;
+    @include respond(tab-port){
+        font-size: rem(25px);
+    }
+    @include respond(phone){
+        font-size: rem(14px);
+    }
+}
+
+.txt-red{
+    color: $color-red;
+}
+.txt-underline{
+    text-decoration: underline;
+}
+.txt-up{
+    text-transform: uppercase;
+}
+.txt-blue-circle{
+    display: inline-block;
+    background-color: $color-blue;
+    border-radius: 100px;
+    padding: 10px;
+    color: $color-white;
+}
