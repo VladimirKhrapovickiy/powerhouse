@@ -51,4 +51,21 @@ $(document).ready(function() {
             moreTrainers.hide()
         })
     }
+    //список залов в форме
+    const gymInput = $("#visit-form-gym");
+    if(gymInput){
+        const gymInputList = $(".gyms__list");
+        const gymItems = $(".gym__item");
+        gymInput.on("click", function(){
+            console.log("click")
+            gymInputList.slideToggle();
+        })
+        gymItems.each(function(){
+            $(this).on("click", function(){
+                gymInput.val($(this).text());
+                gymInputList.slideToggle();
+            })
+        })
+        
+    }
 })

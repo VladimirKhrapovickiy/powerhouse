@@ -216,6 +216,7 @@
     }
     &__map{
         grid-row: 3/5;
+        grid-column: 2/3;
         width: 100%;
         border-radius: 30px;
         overflow: hidden;
@@ -498,9 +499,7 @@
 .btn-more{
     max-width: rem(250px);
     margin: 0 auto;
-    @include respond(phone){
-        font-size: rem(20px);
-    }
+    font-size: rem(20px);
 }
 .programm{
     max-width: rem(300px);
@@ -701,6 +700,37 @@
         display: flex;
         flex-direction: column;
     }
+    &__input-container{
+        position: relative;
+        margin-bottom: rem(20px);
+        img{
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 10px;
+            transform: translateY(-50%);
+            right: 5%;
+        }
+        .gyms__list{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translateY(100%);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            display: none;
+            .gym__item{
+                 background-color: $color-white;
+                 padding: 1rem;
+                cursor: pointer;
+            }
+            .gym__item:hover{
+                background-color: $color-red;
+                color: $color-white;
+            }
+        }
+    }
     &__input{
         border:none;
         background-color: transparent;
@@ -719,8 +749,9 @@
         margin-bottom: rem(40px);
     }
     #visit-form-gym{
-        margin-bottom: rem(20px);
         color: $color-red;
+        cursor: pointer;
+        width: 100%;
     }
     &__button{
         max-width: 400px;
