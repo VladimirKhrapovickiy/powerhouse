@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     //слайдер - секция comfort
     if($(".swiper")){
         const swiper = new Swiper('.swiper', {
@@ -11,15 +12,18 @@ $(document).ready(function() {
             },
             scrollbar: {
               el: '.swiper-scrollbar',
-            },
-            zoom: {
-                maxRatio: 1.25,
-                minRatio: 1
-              },
-            
+            },          
           });
           swiper.slideTo(2)
     }
+        //галерея 
+        var lightbox = new PhotoSwipeLightbox({
+            gallery: '.test-gallery',
+            children: 'a',
+            // dynamic import is not supported in UMD version
+            pswpModule: PhotoSwipe 
+          });
+          lightbox.init();
     // кнопки показать еще
     const moreProgramm = $(".btn-more-programm");
     const programms = $(".programm");

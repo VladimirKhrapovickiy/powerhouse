@@ -47,7 +47,7 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
     return gulp.src([ 
-		'node_modules/jquery/dist/jquery.min.js' ,'src/js/**/*.js'])
+		'node_modules/jquery/dist/jquery.min.js',"node_modules/photoswipe/dist/umd/photoswipe.umd.min.js","node_modules/photoswipe/dist/umd/photoswipe-lightbox.umd.min.js" ,'src/js/**/*.js'])
         .pipe(gulp.dest("dist/js"))
 	.pipe(browserSync.stream());
 
