@@ -697,6 +697,7 @@
     &__input-container{
         position: relative;
         margin-bottom: rem(20px);
+        max-width: 400px;
         img{
             position: absolute;
             top: 50%;
