@@ -12,7 +12,10 @@ $(document).ready(function() {
             },
             scrollbar: {
               el: '.swiper-scrollbar',
-            },          
+            },
+            pagination: {
+                el: '.swiper-pagination',
+              },          
           });
           swiper.slideTo(2)
     }

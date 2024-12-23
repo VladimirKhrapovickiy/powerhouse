@@ -14,6 +14,8 @@
     }
     @include respond(phone){
         padding: rem(28px) 0;
+        background-image: url("../img/main-screen-phone.webp");
+        background-position: inherit;
     }
     &__top{
         background-color: $color-white;
@@ -56,6 +58,10 @@
         @include respond(tab-port){
             align-self: start;
             margin-bottom: rem(24px);
+        }
+        @include respond(phone){
+            margin-bottom: 0;
+            font-size: rem(14px);
         }
     }
     &__buttons{
@@ -122,6 +128,7 @@
         }
         @include respond(phone){
             padding: rem(20px) rem(45px);
+            max-width: rem(310px);
         }
     }
 }
@@ -151,6 +158,9 @@
         @include respond(tab-port){
             max-width: rem(430px);
             margin:0 auto rem(29px);
+        }
+        @include respond(phone){
+            max-width: rem(250px);
         }
     }
     &__list-container{
@@ -235,6 +245,9 @@
             grid-column: 1 / -1;
             justify-self: center;
         }
+        @include respond(phone){
+            max-width: 100%;
+        }
     }
 }
 .pricing{
@@ -254,6 +267,10 @@
         @include respond(tab-lend){
             font-weight: 600;
         }
+        @include respond(phone){
+            font-size: rem(25px);
+            font-weight: 500;
+        }
     }
     &__title, .title-3{
         text-align: start;
@@ -262,12 +279,13 @@
     }
     .title-3{
         @include respond(phone){
-            margin-bottom: rem(40px) ;
+            margin-bottom: rem(40px);
+            font-size: rem(14px);
         }
     }
     &__graph{
         width: 100%;
-        transform: translateY(-50px);
+        transform: translateY(-50px) translateX(8px) scaleX(1.02);
         z-index: 0;
         position: relative;
         @include respond(tab-lend){
@@ -314,6 +332,7 @@
         }
         @include respond(phone){
             font-size: rem(14px);
+            max-width: 100%;
         }
     }
 }
@@ -326,6 +345,7 @@
         }
     }
     &__container{
+        padding: 0;
         @include respond(tab-port){
             padding: 0;
         }
@@ -364,6 +384,7 @@
     }
     &__desc-listing{
         padding-left: rem(24px);
+        padding-right: rem(10px);
         display: flex;
         flex-direction: column;
         gap: rem(10px);
@@ -383,6 +404,9 @@
     }
     .title-3{
         margin-bottom: rem(54px);
+        @include respond(phone){
+            margin-bottom: rem(29px);
+        }
     }
 }
 .comfort{
@@ -397,6 +421,9 @@
 
     .title-3{
         margin-bottom: rem(40px);
+        @include respond(phone){
+            margin-bottom: rem(20px);
+        }
     }
     &__slider{
         width: 600px;
@@ -425,6 +452,18 @@
             width: rem(30px);
             transform: translateY(-50%) translateX(-30%);
         }
+    }
+    .swiper-pagination{
+        display: none;
+        @include respond(phone){
+            display: block;
+        }
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom:-30px;
+    }
+    .swiper-pagination-bullet-active {
+        background: $color-black;
     }
     .swiper {
         width: 600px;
@@ -492,13 +531,12 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: rem(20px);
-        margin-bottom: rem(50px);
         justify-content: center;
     }
 }
 .btn-more{
     max-width: rem(250px);
-    margin: 0 auto;
+    margin: rem(50px) auto 0;
     font-size: rem(20px);
 }
 .programm{
@@ -532,6 +570,9 @@
     }
     .title-3{
         margin-bottom: rem(77px);
+        @include respond(phone){
+            margin-bottom: rem(20px);
+        }
     }
     &__container{
         max-width: rem(1115px);
@@ -543,30 +584,44 @@
         }
     }
     &__list{
-        display: flex;
-        gap: rem(40px);
+        display: grid;
+        grid-column-gap: rem(40px);
         justify-content: space-between;
-        margin-bottom: rem(100px);
         flex-wrap: wrap;
         justify-content: center;
+        grid-auto-rows: auto min-content auto ;
+        grid-template-columns: repeat(3, 1fr);
         @include respond(tab-port){
             gap: rem(20px);
+            grid-template-columns: repeat(2, 1fr);
         }
         @include respond(phone){
-            gap: rem(35px);
-            margin-bottom: rem(40px);
+            gap: 0;
+            margin-bottom: 0;
+            grid-template-columns: 1fr;
         }
     }
 }
 .trainer{
-    display: flex;
+    display: grid;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: $color-beige;
     border-radius: 25px;
     max-width: rem(330px);
+    grid-template-columns: auto;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    margin-bottom: rem(100px);
     @include respond(tab-port){
         max-width: rem(310px);
+    }
+    @include respond(phone){
+        max-width: 100%;
+        margin-bottom: rem(35px);
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
     &__img{
         width: 100%;
@@ -644,6 +699,9 @@
         text-align: center;
         font-size: rem(18px);
         max-width: rem(480px);
+        @include respond(phone){
+            font-weight: 300;
+        }
     }
 }
 .visit{
@@ -680,6 +738,7 @@
         font-size: rem(35px);
         font-weight: 500;
         text-align: start;
+        max-width: 28.5rem;
         @include respond(phone){
             font-size: rem(23px);
         }
