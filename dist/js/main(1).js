@@ -1,40 +1,11 @@
 $(document).ready(function() {
-    //popup
-    const $popup = $(".popup-form__container");
-    const $callPopupBnts = $(".get-form-btn");
-    const $closeFormBtn = $(".popup-form__close")
-    $callPopupBnts.each(function(){
-        $(this).on("click", function(event){
-            event.preventDefault();
-            $popup.show();
-        })
-    })
-    $closeFormBtn.on("click", function(){
-        $popup.hide();
-    })
-    const modal = document.querySelector(".popup-form");
-    document.addEventListener("mousedown", (e) => {
-      if (!modal.contains(e.target)) {
-        $popup.hide();
-      }
-    });
 
     //слайдер - секция comfort
     if($(".swiper")){
-        let slides = 1;
-        let space = 90;
-        if(window.screen.width <= 750){
-            slides = 2;
-            space = 21;
-        }
-        if(window.screen.width <= 450){
-            slides =1;
-            space = 21;
-        }
         const swiper = new Swiper('.swiper', {
             loop: true,
-            spaceBetween: space,
-            slidesPerView: slides,
+            spaceBetween: 90,
+            slidesPerView: 1,
             navigation: {
               nextEl: '.comfort__slider-next',
               prevEl: '.comfort__slider-prev',
@@ -75,16 +46,9 @@ $(document).ready(function() {
     const moreTrainers = $(".btn-more-trainers");
     const trainers = $(".trainer");
     trainers.each(function(i){
-        if(window.screen.width >= 750){
-            if(i >= 3){
-                $(this).hide()
-            }
-        }else{
-            if(i >= 4){
-                $(this).hide()
-            }
+        if(i >= 3){
+            $(this).hide()
         }
-
     })
     if(moreTrainers){
         moreTrainers.on("click", function(){

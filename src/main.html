@@ -85,30 +85,33 @@
         </div>
     </div>
 
-    <header class="header"></header>
-    <main class="main">
+    <header class="header">
+
+    </header>
+    <main class="main page-main">
         <section class="main-screen">
             <div class="main-screen__top">
-                <h1 class="title-1 main-screen__title">Премиальный фитнес-клуб. Со скидкой <span class="txt-red">50%</span> до открытия!</h1>
+                <h1 class="title-1 main-screen__title">стройное тело <br> <span class="txt-red">в фитнес-клубах 
+                    с бассейном</span></h1>
                 <div class="main-screen__info">
-                    <p>Каждый месяц, первым 100 клиентом – специальные условия!</p>
-                    <p>Открытие - 30 июня 2025г.</p>
+                    <p>Залы в 10 минутах от дома или работы</p>
                 </div>
-                <div class="main-screen__buttons">
-                    <button class="btn btn-red btn-red-thin">Забронировать место</button>
-                    <button class="btn btn-tran btn-tran-thin get-form-btn">Узнать цену</button>
+                <div class="main-screen__sale">
+                    <div class="main-screen__sale-text">
+                        <p>Карта “Безлимит”</p>
+                        <p>от <span class="txt-crossed">5200</span> <br class ="br-mobile"><span class="txt-bold txt-big">2 500 ₽</span> / мес.</p>
+                    </div>
+                    <a href="#" class="btn btn-red btn-main">выбрать клубную карту</a>
                 </div>
             </div>
             <div class="main-screen__buttons main-screen__buttons-outer">
-                <button class="btn btn-red btn-red-thin">Забронировать место</button>
-                <button class="btn btn-tran btn-tran-thin get-form-btn">Узнать цену</button>
+                <button class="btn btn-red btn-red-thin">выбрать клубную карту</button>
             </div>
         </section>
         <section class="advantages">
-            <div class="advantages__advantage"><strong>6 фитнес-клубов</strong><br> в Екатеринбурге</div>
             <div class="advantages__advantage">Аквааэробика в бассейне с водой +28 С</div>
-            <div class="advantages__advantage">Турецкий хаммам, финская сауна</div>
-            <div class="advantages__advantage">Групповые занятия уже включены</div>
+            <div class="advantages__advantage">Йога и пилатес, силовые тренинги и единоборства</div>
+            <div class="advantages__advantage">Команда тренеров и КМС с опытом до 10 лет</div>
         </section>
         <section class="locations">
             <div class="container locations__container">
@@ -129,31 +132,15 @@
                 <a href="#" class="btn btn-red locations__btn">+7 (343) 288-55-46</a>
             </div>
         </section>
-        <section class="pricing">
-            <div class="container pricing__container">
-                <h2 class="title-2 pricing__title">Сколько стоит карта?</h2>
-                <h3 class="title-3">цена растет по мере приближения дня открытия</h3>
-                <picture>
-                    <source media="(max-width:450px)" srcset="./img/graph-phone.webp">
-                    <source media="(max-width:750px)" srcset="./img/graph-tab.webp">
-                    <img src="./img/graph-full.webp" alt="график цен" class="pricing__graph">
-                  </picture>
-                <div class="pricing__bottom">
-                    <span>Каждый месяц, первые 100 карт по сниженным ценам</span>
-                    <button class="btn btn-red pricing__btn">узнать актуальную цену</button>
-                </div>
-            </div>
-            <div class="pricing__info">
-                <span>Каждый месяц, первые 100 карт по сниженным ценам</span>
-                <button class="btn btn-red pricing__btn get-form-btn">узнать актуальную цену</button>
-            </div>
-        </section>
         <section class="pool">
             <div class="container pool__container">
-                <h2 class="title-2 pool__title">Тёплый бассейн и<br> большая релакс-зона</h2>
+                <h2 class="title-2 pool__title">4 фитнес-клуба<br> с бассейном и релакс-зоной</h2>
                 <h3 class="title-3">входит в стоимость карты</h3>
                 <div class="pool__content">
-                    <img src="./img/pool-promo.webp" alt="бассеййн" class="pool__main-img">
+                    <img src="./img/pools-1.webp" alt="бассеййн" class="pool__main-img">
+                    <img src="./img/pools-2.webp" alt="бассеййн" class="pool__main-img">
+                    <img src="./img/pools-3.webp" alt="бассеййн" class="pool__main-img">
+                    <img src="./img/pools-4.webp" alt="бассеййн" class="pool__main-img">
                     <div class="pool__info">
                         <img src="./img/swim-gogles.webp" alt="очки для плавания" class="pool__gogles-img">
                         <ul class="pool__desc-listing">
@@ -167,42 +154,82 @@
                 </div>
             </div>
         </section>
-        <section class="comfort">
-            <div class="container comfort__container">
-                <h2 class="title-2 comfort__title">занимайтесь с комфортом</h2>
-                <h3 class="title-3">и без очередей</h3>
-                <div class="about-gym">
-                    <img src="./img/treadmill.png" alt="беговая дорожка" class="about-gym__img">
-                    <span class="about-gym__txt">Общая площадь 2 200 м², передовая система вентиляции. Мы продублировали популярные тренажёры и увеличили кардиозону. В каждом секторе установили американское оборудование для тренировок любого типа.</span>
+        <section class="trainers">
+            <div class="container trainers__container">
+                <h2 class="title-2 trainers__title">Профессиональные тренеры</h2>
+                <h3 class="title-3">помогут добиться ваших целей</h3>
+                <div class="trainers__list">
+                    <div class="trainer">
+                        <img src="./img/trainer-2.webp" alt="тренер" class="trainer__img">
+                        <span class="trainer__title">Инструктор по бодибилдингу</span>
+                        <span class="trainer__name txt-up">Екатерина матвеева</span>
+                        <ul class="trainer__awards-list">
+                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
+                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
+                            <li class="trainer__awards-item">— Третья очень длинная строка, которая не помещается в одну</li>
+                            <li class="trainer__awards-item">— Четвертая строка для примера</li>
+                        </ul>
+                        <a href="#" class="btn btn-red trainer__btn">Записаться</a>
+                    </div>
+                    <div class="trainer">
+                        <img src="./img/trainer-1.webp" alt="тренер" class="trainer__img">
+                        <span class="trainer__title">Инструктор по бодибилдингу</span>
+                        <span class="trainer__name txt-up">михаил стерхов</span>
+                        <ul class="trainer__awards-list">
+                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
+                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
+                        </ul>
+                        <a href="#" class="btn btn-red trainer__btn">Записаться</a>
+                    </div>
+                    <div class="trainer">
+                        <img src="./img/trainer-2.webp" alt="тренер" class="trainer__img">
+                        <span class="trainer__title">Инструктор по бодибилдингу</span>
+                        <span class="trainer__name txt-up">Екатерина матвеева</span>
+                        <ul class="trainer__awards-list">
+                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
+                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
+                            <li class="trainer__awards-item">— Третья очень длинная строка, которая не помещается в одну</li>
+                            <li class="trainer__awards-item">— Четвертая строка для примера</li>
+                        </ul>
+                        <a href="#" class="btn btn-red trainer__btn">Записаться</a>
+                    </div>
+                    <div class="trainer">
+                        <img src="./img/trainer-2.webp" alt="тренер" class="trainer__img">
+                        <span class="trainer__title">Инструктор по бодибилдингу</span>
+                        <span class="trainer__name txt-up">Екатерина матвеева</span>
+                        <ul class="trainer__awards-list">
+                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
+                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
+                            <li class="trainer__awards-item">— Третья очень длинная строка, которая не помещается в одну</li>
+                            <li class="trainer__awards-item">— Четвертая строка для примера</li>
+                        </ul>
+                        <a href="#" class="btn btn-red trainer__btn">Записаться</a>
+                    </div>
+                    <div class="trainer">
+                        <img src="./img/trainer-1.webp" alt="тренер" class="trainer__img">
+                        <span class="trainer__title">Инструктор по бодибилдингу</span>
+                        <span class="trainer__name txt-up">михаил стерхов</span>
+                        <ul class="trainer__awards-list">
+                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
+                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
+                        </ul>
+                        <a href="#" class="btn btn-red trainer__btn">Записаться</a>
+                    </div>
+                    <div class="trainer">
+                        <img src="./img/trainer-2.webp" alt="тренер" class="trainer__img">
+                        <span class="trainer__title">Инструктор по бодибилдингу</span>
+                        <span class="trainer__name txt-up">Екатерина матвеева</span>
+                        <ul class="trainer__awards-list">
+                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
+                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
+                            <li class="trainer__awards-item">— Третья очень длинная строка, которая не помещается в одну</li>
+                            <li class="trainer__awards-item">— Четвертая строка для примера</li>
+                        </ul>
+                        <a href="#" class="btn btn-red trainer__btn">Записаться</a>
+                    </div>
                 </div>
-                <div class="swiper">
-                        <div class="swiper-wrapper test-gallery">
-                            <a href="./img/swiper-1.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
-                                <img src="./img/swiper-1.webp">
-                            </a>
-                            <a href="./img/swiper-2.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
-                                <img src="./img/swiper-2.webp">
-                            </a>
-                            <a href="./img/swiper-3.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
-                                <img src="./img/swiper-3.webp">
-                            </a>
-                            <a href="./img/swiper-4.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
-                                <img src="./img/swiper-4.webp">
-                            </a>
-                            <a href="./img/swiper-5.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
-                                <img src="./img/swiper-5.webp">
-                            </a>
-                            <a href="./img/swiper-6.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
-                                <img src="./img/swiper-6.webp">
-                            </a>
-                            <a href="./img/swiper-7.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
-                                <img src="./img/swiper-7.webp">
-                            </a>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="comfort__slider-prev"><img src="./img/icons/slider_button.svg" alt="кнопка назад"></div>
-                        <div class="comfort__slider-next"><img src="./img/icons/slider_button.svg" alt="кнопка вперед"></div>
-                </div>
+                <div class="btn btn-tran btn-more btn-more-trainers btn-arrow"><span>Показать еще</span><img src="./img/icons/arrow-down.svg" alt="стрелка вниз"></div>
+            </div>
         </section>
         <section class="programms">
             <div class="container programms__container">
@@ -313,75 +340,110 @@
                 <div class="btn btn-tran btn-more btn-more-programm btn-arrow"><span>Показать еще</span><img src="./img/icons/arrow-down.svg" alt="стрелка вниз"></div>
             </div>
         </section>
-        <section class="trainers">
-            <div class="container trainers__container">
-                <h2 class="title-2 trainers__title">Профессиональные тренеры</h2>
-                <h3 class="title-3">помогут добиться ваших целей</h3>
-                <div class="trainers__list">
-                    <div class="trainer">
-                        <img src="./img/trainer-2.webp" alt="тренер" class="trainer__img">
-                        <span class="trainer__name txt-up">Екатерина матвеева</span>
-                        <span class="trainer__title">Инструктор по бодибилдингу</span>
-                        <ul class="trainer__awards-list">
-                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
-                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
-                            <li class="trainer__awards-item">— Третья очень длинная строка, которая не помещается в одну</li>
-                            <li class="trainer__awards-item">— Четвертая строка для примера</li>
-                        </ul>
-                    </div>
-                    <div class="trainer">
-                        <img src="./img/trainer-1.webp" alt="тренер" class="trainer__img">
-                        <span class="trainer__name txt-up">михаил стерхов</span>
-                        <span class="trainer__title">Инструктор по бодибилдингу</span>
-                        <ul class="trainer__awards-list">
-                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
-                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
-                        </ul>
-                    </div>
-                    <div class="trainer">
-                        <img src="./img/trainer-2.webp" alt="тренер" class="trainer__img">
-                        <span class="trainer__name txt-up">Екатерина матвеева</span>
-                        <span class="trainer__title">Инструктор по бодибилдингу</span>
-                        <ul class="trainer__awards-list">
-                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
-                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
-                            <li class="trainer__awards-item">— Третья очень длинная строка, которая не помещается в одну</li>
-                            <li class="trainer__awards-item">— Четвертая строка для примера</li>
-                        </ul>
-                    </div>
-                    <div class="trainer">
-                        <img src="./img/trainer-2.webp" alt="тренер" class="trainer__img">
-                        <span class="trainer__name txt-up">Екатерина матвеева</span>
-                        <span class="trainer__title">Инструктор по бодибилдингу</span>
-                        <ul class="trainer__awards-list">
-                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
-                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
-                            <li class="trainer__awards-item">— Третья очень длинная строка, которая не помещается в одну</li>
-                            <li class="trainer__awards-item">— Четвертая строка для примера</li>
-                        </ul>
-                    </div>
-                    <div class="trainer">
-                        <img src="./img/trainer-1.webp" alt="тренер" class="trainer__img">
-                        <span class="trainer__name txt-up">михаил стерхов</span>
-                        <span class="trainer__title">Инструктор по бодибилдингу</span>
-                        <ul class="trainer__awards-list">
-                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
-                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
-                        </ul>
-                    </div>
-                    <div class="trainer">
-                        <img src="./img/trainer-2.webp" alt="тренер" class="trainer__img">
-                        <span class="trainer__name txt-up">Екатерина матвеева</span>
-                        <span class="trainer__title">Инструктор по бодибилдингу</span>
-                        <ul class="trainer__awards-list">
-                            <li class="trainer__awards-item">— Мастер спорта по бодибилдингу</li>
-                            <li class="trainer__awards-item">— Обладатель кубка Западной Сибири и Урала</li>
-                            <li class="trainer__awards-item">— Третья очень длинная строка, которая не помещается в одну</li>
-                            <li class="trainer__awards-item">— Четвертая строка для примера</li>
-                        </ul>
-                    </div>
+        <section class="subscribe">
+            <div class="container subscribe__container">
+                <div class="subscribe__info">
+                    <img src="./img/logo.png" class="subscribe__logo" alt="логотип">
+                    <h2 class="subscribe__title">узнайте об акциях <br>и скидках первыми</h2>
+                    <p class="subscribe__text">Один раз в месяц мы будем присылать вам информацию о скидках и акциях.<br>Обещаем быть полезными</p>
                 </div>
-                <div class="btn btn-tran btn-more btn-more-trainers btn-arrow"><span>Показать еще</span><img src="./img/icons/arrow-down.svg" alt="стрелка вниз"></div>
+                <form class="subscribe__form">
+                    <input type="text" class="subscribe__input" placeholder="Ваш Email">
+                    <button class="btn btn-red subscribe__submit">Отправить</button>
+                    <p class="subscribe__agreement">Нажимая на кнопку вы принимаете правила <a href="#">политики конфиденциальности</a></p>
+                </form>
+                <img src="./img/sub-1.png" alt="тренер" class="subscribe__img">
+            </div>
+        </section>
+        <section class="comfort">
+            <div class="container comfort__container">
+                <h2 class="title-2 comfort__title">занимайтесь с комфортом</h2>
+                <h3 class="title-3">и без очередей</h3>
+                <div class="about-gym">
+                    <img src="./img/treadmill.png" alt="беговая дорожка" class="about-gym__img">
+                    <span class="about-gym__txt">Залы от 1 500 до 3 000 м² с передовой системой вентиляции. Мы продублировали популярные тренажёры и увеличили кардиозону. В каждом секторе американское оборудование для тренировок любого типа.</span>
+                </div>
+                <div class="swiper">
+                        <div class="swiper-wrapper test-gallery">
+                            <a href="./img/swiper-1.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
+                                <img src="./img/swiper-1.webp">
+                            </a>
+                            <a href="./img/swiper-2.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
+                                <img src="./img/swiper-2.webp">
+                            </a>
+                            <a href="./img/swiper-3.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
+                                <img src="./img/swiper-3.webp">
+                            </a>
+                            <a href="./img/swiper-4.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
+                                <img src="./img/swiper-4.webp">
+                            </a>
+                            <a href="./img/swiper-5.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
+                                <img src="./img/swiper-5.webp">
+                            </a>
+                            <a href="./img/swiper-6.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
+                                <img src="./img/swiper-6.webp">
+                            </a>
+                            <a href="./img/swiper-7.webp" class="swiper-slide" data-pswp-width="1200" data-pswp-height="800">
+                                <img src="./img/swiper-7.webp">
+                            </a>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="comfort__slider-prev"><img src="./img/icons/slider_button.svg" alt="кнопка назад"></div>
+                        <div class="comfort__slider-next"><img src="./img/icons/slider_button.svg" alt="кнопка вперед"></div>
+                </div>
+        </section>
+        <section class="club-card">
+            <div class="container club-card__container">
+                <h2 class="title-2 club-card__title">варианты клубных карт</h2>
+                <h3 class="title-3">Самые популярные</h3>
+                <ul class="club-card__list">
+                    <li class="club-card__item">
+                        <img src="./img/club-card-1.png" alt="клубная карта" class="club-card__img">
+                        <h4 class="club-card__title-card">безлимитный формат</h4>
+                        <p class="club-card__desc">занимайтесь без ограничений</p>
+                        <button class="btn btn-tran">Что входит</button>
+                        <button class="btn btn-red">Показать цену</button>
+                    </li>
+                    <li class="club-card__item">
+                        <img src="./img/club-card-2.png" alt="клубная карта" class="club-card__img">
+                        <h4 class="club-card__title-card">карта <br>дуэт</h4>
+                        <p class="club-card__desc">достигайте результатов вместе</p>
+                        <button class="btn btn-tran">Что входит</button>
+                        <button class="btn btn-red">Показать цену</button>
+                    </li>
+                    <li class="club-card__item">
+                        <img src="./img/club-card-3.png" alt="клубная карта" class="club-card__img">
+                        <h4 class="club-card__title-card">дневной формат</h4>
+                        <p class="club-card__desc">если нравится заниматься утром</p>
+                        <button class="btn btn-tran">Что входит</button>
+                        <button class="btn btn-red">Показать цену</button>
+                    </li>
+                    <li class="club-card__item">
+                        <img src="./img/club-card-4.png" alt="клубная карта" class="club-card__img">
+                        <h4 class="club-card__title-card">детская карта</h4>
+                        <p class="club-card__desc">развивайтесь вместе с ребенком</p>
+                        <button class="btn btn-tran">Что входит</button>
+                        <button class="btn btn-red">Показать цену</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="subscribe subscribe-cost">
+            <div class="container subscribe__container">
+                <div class="subscribe__info">
+                    <img src="./img/logo.png" class="subscribe__logo" alt="логотип">
+                    <h2 class="subscribe__title">интересует <br>другой вариант?</h2>
+                    <span class="subscribe__text">У нас более 13 вариантов карт:</span>
+                    <ul class="subscribe__list">
+                        <li class="subscribe__item">сроком от одного месяца,</li>
+                        <li class="subscribe__item">с ежемесячной оплатой,</li>
+                        <li class="subscribe__item">с дополнительной заморозкой,</li>
+                        <li class="subscribe__item">семейные карты и корпоративные предложения.</li>
+                    </ul>
+                    <span class="txt-bold">Несколько вариантов рассрочек.</span>
+                    <button class="btn btn-red btn-get-cost">Узнать цену</button>
+                </div>
+                <img src="./img/get-price-img.webp" alt="тренер" class="subscribe__img">
             </div>
         </section>
         <section class="kids">
@@ -390,7 +452,7 @@
                 <h3 class="title-3">Мы найдем интересные тренировки для вашего ребенка.</h3>
                 <div class="about-gym">
                     <img src="./img/bear.png" alt="игрушка медвежонок" class="about-gym__img">
-                    <span class="about-gym__txt">Мы найдем интересные тренировки для вашего ребенка, которые укрепят здоровье и помогут весело провести время в компании друзей, пока вы тренируетесь в зале</span>
+                    <span class="about-gym__txt">Больше 25 детских направлений. Развивающие кружки, спортивные группы, занятия в бассейне.</span>
                 </div>
                 <div class="kids__list">
                     <div class="kids-programm">
@@ -404,6 +466,57 @@
                         <p class="kids-programm__description">Развитие общей физической подготовки: чирлидинг kids, йога в гамаках, зумба и йога kids</p>
                     </div>
                 </div>
+                <button class="btn btn-tran kids__btn">Перейти в детский клуб</button>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container subscribe__container">
+                <div class="subscribe__info">
+                    <h2 class="subscribe__title">почему фитнес <br>помогает не всем?</h2>
+                    <p class="subscribe__text">Добавили нагрузку, а изменений нет. <br>Пора подключать питание! </p>
+                    <p class="subscribe__text">Смотрите видеоурок по базовому рациону от тренера с медицинским образованием.</p>
+                </div>
+                <form class="subscribe__form">
+                    <input type="text" class="subscribe__input" placeholder="Ваш Email">
+                    <button class="btn btn-red subscribe__submit">Отправить</button>
+                    <p class="subscribe__agreement">Нажимая на кнопку вы принимаете правила <a href="#">политики конфиденциальности</a></p>
+                </form>
+                <img src="./img/sub-3.webp" alt="тренер" class="subscribe__img">
+            </div>
+        </section>
+        <section class="about">
+            <div class="container about__container">
+                <h2 class="title-2 about__title">что из себя представляет фитнес клуб</h2>
+                <div class="about-gym">
+                    <img src="./img/ping.png" alt="игрушка медвежонок" class="about-gym__img">
+                    <span class="about-gym__txt">Powerhouse Gym в Екатеринбурге - это 5 фитнес-центров, где 3 из них - это фитнес-клуб с бассейном.<br><br>Наши клубы расположены в районах города: Ботаника, Вторчермет, Центр, Юго-Западный, ЖБИ.</span>
+                </div>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <h3>ТРЕНАЖЕРНЫЙ ЗАЛ</h3>
+                        <p class="about__text">Оборудование международных брендов Hammer Strenght, Life Fitness, Paramout - зона свободных весов, зона тренажеров, кардиозона, зона функционального тренинга.</p>
+                    </li>
+                    <li class="about__item">
+                        <h3>залы груповых программ</h3>
+                        <p class="about__text">Проводим групповые занятия по фитнес-направлениям: силовые и функциональные, танцы, оздоровительные. 40 видов тренировок.</p>
+                    </li>
+                    <li class="about__item">
+                        <h3>бассейн</h3>
+                        <p class="about__text">От 15 до 20 метров в длину. В наличии зона для детей. Обучение плаванию взрослых и детей, аквааэробика, свободное плавание.</p>
+                    </li>
+                    <li class="about__item">
+                        <h3>зона боевых искусств</h3>
+                        <p class="about__text">Есть мешки, груши, предоставляем экипировку для тренинга. Обучение боксу взрослых и детей, развитие навыков самозащиты.</p>
+                    </li>
+                    <li class="about__item">
+                        <h3>спа-зоны</h3>
+                        <p class="about__text">Финские сауны, турецкие парные (хаммам), джакузи, душ Шарко, кабинеты ухода за телом.</p>
+                    </li>
+                    <li class="about__item">
+                        <h3>детский клуб</h3>
+                        <p class="about__text">Отдельная зона для детей от 2,5 до 13 лет. Творческие и спортивные, развивающие занятий.</p>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="visit">

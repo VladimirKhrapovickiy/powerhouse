@@ -53,3 +53,12 @@ body{
     padding: 10px;
     color: $color-white;
 }
+.txt-crossed{
+    text-decoration: line-through;
+}
+.txt-bold{
+    font-weight: 700;
+}
+.txt-big{
+    font-size: rem(40px);
+}
