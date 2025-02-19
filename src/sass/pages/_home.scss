@@ -1275,20 +1275,28 @@ a:hover {
         }
     }
     @media only screen and (max-width: 450px){
+        .title-3{
+            font-size: rem(16px);
+        }
+        .locations__item{
+            font-size: rem(16px);
+        }
         .main-screen{
             padding: rem(60px) rem(15px) rem(300px);
             background-image: url(../img/main-bg-phone.png);
+            background-position: center;
         }
         .main-screen__title{
             font-size: rem(25px);
             line-height: 130%;
+            margin-bottom: rem(20px);
             .txt-red{
                 font-weight: 700;
             }
         }
         .main-screen__info{
             p{
-                font-size: rem(13px);
+                font-size: rem(14px);
             }
         }
 
