@@ -1177,6 +1177,9 @@ a:hover {
     .br-mobile{
         display: none;
     }
+    .main__girl-img{
+        display: none;
+    }
     @media only screen and (max-width: 1200px) {
         .pool__main-img {
             height: auto;
@@ -1275,6 +1278,19 @@ a:hover {
         }
     }
     @media only screen and (max-width: 450px){
+        .main-screen{
+            position: relative;
+        }
+        .main__girl-img{
+            display: block;
+            position: absolute;
+            bottom: 390px;
+            z-index: 0;
+        }
+        .main-screen__buttons{
+            z-index: 2;
+            position: relative;
+        }
         .title-3{
             font-size: rem(16px);
         }
@@ -1283,6 +1299,9 @@ a:hover {
         }
         .locations__container{
             padding: 0 rem(10px);
+        }
+        .main-screen__top{
+            margin-bottom: rem(67px);
         }
         .pool__title{
             max-width: rem(280px);
