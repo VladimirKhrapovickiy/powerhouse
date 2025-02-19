@@ -1281,6 +1281,30 @@ a:hover {
         .locations__item{
             font-size: rem(16px);
         }
+        .locations__container{
+            padding: 0 rem(10px);
+        }
+        .pool__title{
+            max-width: rem(280px);
+            margin: 0 auto rem(10px);
+        }
+        .pool{
+            .title-3{
+                margin-bottom: rem(26px);
+            }
+        }
+        .pool__desc-listing{
+            margin-top: -2.25rem;
+        }
+        .programm__list{
+            padding-left: rem(25px);
+        }
+        .programm{
+            max-width: 100%;
+        }
+        .about-gym__txt{
+            font-size: rem(16px);
+        }
         .main-screen{
             padding: rem(60px) rem(15px) rem(300px);
             background-image: url(../img/main-bg-phone.png);
@@ -1293,6 +1317,12 @@ a:hover {
             .txt-red{
                 font-weight: 700;
             }
+        }
+        .btn-more{
+            max-width: 100%;
+            justify-content: center;
+            gap: rem(40px);
+            height: rem(54px);
         }
         .main-screen__info{
             p{
@@ -1354,8 +1384,11 @@ a:hover {
             padding: 8px 7px 20px 17px;
             gap: 9px;
             .about-gym__txt{
-                font-size: rem(12px);
+                font-size: rem(16px);
             }
+        }
+        .kids__btn{
+            max-width: 100%;
         }
         .subscribe__container{
             grid-template-columns: 1fr;
@@ -1364,16 +1397,23 @@ a:hover {
         .subscribe__img{
             grid-column: 1/2;
             grid-row: 1/2;
-            width: rem(240px);
-            height: rem(337px);
+            width: 90%;
+            height: 100%;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: rem(30px);
         }
         .subscribe__title{
-            font-size: rem(22px);
+            font-size: rem(24px);
             margin-bottom: rem(10px);
         }
-
+        .subscribe__text{
+            font-size: rem(16px);
+            margin-bottom: rem(20px);
+        }
+        .subscribe__form{
+            max-height: unset;
+        }
         .subscribe__input{
             width: 100%;
             height: rem(54px);
@@ -1386,6 +1426,9 @@ a:hover {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        .subscribe__info{
+            padding: 20px 0;
         }
         .subscribe__agreement{
             font-size: rem(10px);
@@ -1402,9 +1445,22 @@ a:hover {
         }
         .club-card__list{
             padding: 0 rem(10px);
+            justify-content: center;
+        }
+        .btn-get-cost{
+            max-width: 100% !important;
         }
         .club-card__item{
             padding: rem(30px) rem(30px);
+            .btn{
+                font-size: rem(16px);
+            }
+            .btn-tran{
+                color: $color-black;
+            }
+            .btn-red{
+                text-transform: uppercase;
+            }
         }
         .club-card__title-card{
             font-size: rem(18px);
@@ -1468,6 +1524,9 @@ a:hover {
         border-radius: 30px;
         align-items: center;
         clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+        .btn-red{
+            text-transform: uppercase;
+        }
     }
     &__img{
         width: rem(150px);
