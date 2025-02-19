@@ -1215,6 +1215,9 @@ a:hover {
         .pool__info{
             grid-column: 2/3;
         }
+        .pool__desc-listing {
+            padding: 0 10px;
+        }
         .subscribe__img {
             grid-column: 2 / 3;
             grid-row: 1 / 2;
@@ -1224,6 +1227,9 @@ a:hover {
         }
         .subscribe__form{
             grid-column: 1/-1;
+        }
+        .subscribe__input {
+            margin-right: 0;
         }
         .club-card, .about{
             padding: rem(50px) rem(20px);
@@ -1253,7 +1259,7 @@ a:hover {
             padding: rem(10px) 0;
         }
         .subscribe__submit {
-            max-width: rem(155px);
+            max-width: rem(160px);
         }
         .subscribe__form{
             justify-content: initial;
@@ -1283,6 +1289,7 @@ a:hover {
                 font-size: rem(13px);
             }
         }
+
         .btn-main{
             display: none;
         }
@@ -1293,7 +1300,9 @@ a:hover {
             display: inline-block;
             margin-left: auto;
             p{
+                margin-bottom: 0 !important;
                 font-size: 14px !important;
+                line-height: 250% !important;
             }
             .txt-big{
                 font-size: rem(28px);
@@ -1354,9 +1363,7 @@ a:hover {
             font-size: rem(22px);
             margin-bottom: rem(10px);
         }
-        .subscribe__form{
-            flex-direction: column;
-        }
+
         .subscribe__input{
             width: 100%;
             height: rem(54px);
