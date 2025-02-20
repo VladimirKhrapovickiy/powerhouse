@@ -1405,6 +1405,9 @@ a:hover {
         .trainers__container>.title-3{
             text-transform: uppercase;
         }
+        .trainers__container>.btn-more{
+            margin-top: 1rem;
+        }
         .about-gym{
             flex-direction: row;
             align-items: flex-start;
@@ -1434,6 +1437,9 @@ a:hover {
             font-size: rem(24px);
             margin-bottom: rem(10px);
         }
+        .subscribe__list{
+            font-size: rem(16px);
+        }
         .subscribe__text{
             font-size: rem(16px);
             margin-bottom: rem(20px);
@@ -1456,6 +1462,10 @@ a:hover {
         }
         .subscribe__info{
             padding: 20px 0;
+            .txt-bold{
+                font-size: rem(16px);
+                margin-bottom: rem(30px);
+            }
         }
         .subscribe__agreement{
             font-size: rem(10px);
@@ -1503,6 +1513,9 @@ a:hover {
         .kids-programm__description{
             text-align: start;
         }
+        .kids__list{
+            margin-bottom: 2.8rem;
+        }
         .about__container>.about-gym{
             flex-direction: column;
         }
@@ -1514,9 +1527,13 @@ a:hover {
         }
         .about__item>h3{
             font-size: rem(20px);
+            margin-bottom: rem(10px);
         }
         .about__text{
             font-size: rem(16px);
+        }
+        .visit__container {
+            gap: 3.75rem;
         }
     }
 }
