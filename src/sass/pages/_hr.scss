@@ -111,6 +111,7 @@
         }
         &__text{
             font-size: 18px;
+            line-height: 150%;
         }
         &__top{
             display: flex;
@@ -230,6 +231,9 @@
     .visit__img{
         max-width: rem(374px);
     }
+    .visit__text {
+        line-height: 150%;
+    }
     .requirements{
         .title-2{
             margin-bottom: rem(10px);
@@ -243,6 +247,7 @@
         }
         &__text{
             font-size: rem(18px);
+            line-height: 150%;
         }
         &__left{
             max-width: rem(530px);
@@ -292,6 +297,7 @@
         &__text{
             font-size: rem(18px);
             max-width: rem(740px);
+            line-height: 150%;
         }
         &__text:not(:last-child){
             margin-bottom: rem(30px);
@@ -315,6 +321,7 @@
         .fact__text{
             max-width: rem(234px);
             font-size: rem(18px);
+            line-height: 150%;
         }
     }
     .comfort{
