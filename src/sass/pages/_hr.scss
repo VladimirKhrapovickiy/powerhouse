@@ -1,4 +1,7 @@
 .main-hr{
+    .plain-text, .plain-text p, p{
+        line-height: 150%;
+    }
     .section{
         margin-bottom: rem(200px);
     }
