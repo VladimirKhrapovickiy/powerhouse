@@ -347,6 +347,7 @@
         }
         .visit__text{
             margin-bottom: rem(40px);
+            line-height: 140%;
         }
         .visit__radio{
             input{
@@ -608,6 +609,15 @@
         }
     }
     @media only screen and (max-width: 580px) {
+        .main-screen-hr__item:not(:last-child){
+            margin-bottom: 0;
+        }
+        .main-screen-hr__item{
+            font-size: rem(14px);
+        }
+        .main-screen-hr .main-screen__title{
+            font-size: rem(25px);
+        }
         .main-screen-hr__img{
             display: none;
         }
